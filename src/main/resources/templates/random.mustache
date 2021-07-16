@@ -1,22 +1,6 @@
 {{>layout/header}}
 <h1>랜덤매칭</h1>
-<script>
-    var n = 1;
-    function minus(){
-        var i =document.getElementById("var1");
-        if(n<1)
-            return;
-        i.innerHTML= --n;
 
-    }
-    function plus(){
-        var i =document.getElementById("var1");
-        if(n==5)
-            return;
-        i.innerHTMl = ++n;
-
-    }
-</script>
 <table>
     <tr><td><button onclick="minus()">-</button></td><td id="var1">1</td><td><button onclick="plus()">+</button></td></tr>
 </table>
