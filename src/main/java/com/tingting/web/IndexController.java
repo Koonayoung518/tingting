@@ -35,7 +35,8 @@ public class IndexController {
     public String open(){
         return "open";
     }
+    @GetMapping("/myinfo")
+    public String myinfo(){ return "myinfo"; }
+    }
 
 
-
-}
