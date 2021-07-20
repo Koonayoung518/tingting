@@ -7,13 +7,19 @@ var main = {
     plus : function() {
 
          var count =document.getElementById("var1").value;
-         if(count!=5)
-         document.getElementById("var1").value = parseInt(count)+1;
+         if(count<5){
+             document.getElementById("var1").value = parseInt(count)+1;
+                $('#ran_table').append("<tr id=\"ran_userid"+count+"\"><td colspan=\"3\"><input type=\"text\"></td></tr>");
+         }
+
     },
     minus : function() {
             var count =document.getElementById("var1").value;
-            if(count!=1)
-            document.getElementById("var1").value = parseInt(count)-1;
+            if(count>1){
+             document.getElementById("var1").value = parseInt(count)-1;
+                        $('#ran_userid'+(count-1)).remove();
+            }
+
     }
 };
 main.init();

@@ -37,6 +37,8 @@ public class IndexController {
     }
     @GetMapping("/myinfo")
     public String myinfo(){ return "myinfo"; }
-    }
+    @GetMapping("/matchlist")
+    public String matchlist(){ return "matchlist"; }
+}
 
 

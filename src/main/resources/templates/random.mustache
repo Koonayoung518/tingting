@@ -1,6 +1,11 @@
 {{>layout/header}}
 <h1>랜덤매칭</h1>
-<table>
+<table id="ran_table">
     <tr><td><button id="btn_m" onclick="minus">-</button></td><td><input type="text" id="var1" value="1" readonly></td><td><button id="btn_p" onclick="plus()">+</button></td></tr>
+    <tr><td colspan="3">아이디</td></tr>
+    <tr id="ran_userid0"><td colspan="3"><input type="text"></td></tr>
 </table>
+<textarea rows="3" cols="50" readonly>남녀 혼합, 성비가 부족한 경우 동성간의 매칭이 이루어질 수 있습니다.</textarea><br>
+동의 <input type="checkbox" name="agree" value="y"><br>
+<button>매칭시작</button>
 {{>layout/footer}}

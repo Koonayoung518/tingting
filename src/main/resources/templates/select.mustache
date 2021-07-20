@@ -1,3 +1,31 @@
 {{>layout/header}}
 <h1>선택매칭</h1>
+<table>
+    <tr><td>학교</td><td></td><td></td><td></td></tr>
+    <tr><td>과</td><td></td><td></td><td></td></tr>
+    <tr><td>학번</td><td><select name="num1">
+        <option value="15">15학번</option>
+        <option value="16">16학번</option>
+        <option value="17">17학번</option>
+        <option value="18">18학번</option>
+        <option value="19">19학번</option>
+        <option value="20">20학번</option>
+        <option value="21">21학번</option>
+    </select></td><td>~<select name="num2">
+        <option value="15">15학번</option>
+        <option value="16">16학번</option>
+        <option value="17">17학번</option>
+        <option value="18">18학번</option>
+        <option value="19">19학번</option>
+        <option value="20">20학번</option>
+        <option value="21">21학번</option>
+    </select></td></tr>
+    <tr><td>인원</td><td><input type="text" maxlength="1"></td></tr>
+    <tr><td>성별</td><td>
+        <input type="radio" name="gen" value="m">남
+        <input type="radio" name="gen" value="f">여
+    </td></tr>
+</table>
+<button>약관보기</button>  약관동의 <input type="checkbox" name="agree" value="y"><br>
+<button>매칭 시작</button>
 {{>layout/footer}}
