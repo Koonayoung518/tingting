@@ -8,6 +8,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class IndexController {
     @GetMapping("/")
+    public String main(){
+        return "main";
+    }
+    @GetMapping("/login")
     public String login(){
         return "login";
     }
@@ -18,10 +22,6 @@ public class IndexController {
     @GetMapping("/index")
     public String index(){
         return "index";
-    }
-    @GetMapping("/main")
-    public String main(){
-        return "main";
     }
     @GetMapping("/random")
     public String random(){
