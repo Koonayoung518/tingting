@@ -39,6 +39,11 @@ public class IndexController {
     public String myinfo(){ return "myinfo"; }
     @GetMapping("/matchlist")
     public String matchlist(){ return "matchlist"; }
+    @GetMapping("findpassword")
+    public String findpassword(){ return "findpassword"; }
+    @GetMapping("changepassword")
+    public String changepassword(){ return "changepassword"; }
+
 }
 
 

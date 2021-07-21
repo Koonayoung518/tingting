@@ -1,8 +1,57 @@
 {{>layout/header}}
-<h1>선택매칭</h1>
 <table>
-    <tr><td>학교</td><td></td><td></td><td></td></tr>
-    <tr><td>과</td><td></td><td></td><td></td></tr>
+    <tr><td>학교 선택</td>
+        <td><select id="school1">
+            <option value="0">선택하세요</option>
+            <option value="강남대학교">강남대학교</option>
+            <option value="용인대학교">용인대학교</option>
+            <option value="명지대학교">명지대학교</option>
+        </select></td>
+        <td><select id="school2">
+            <option value="0">선택하세요</option>
+            <option value="강남대학교">강남대학교</option>
+            <option value="용인대학교">용인대학교</option>
+            <option value="명지대학교">명지대학교</option>
+        </select></td>
+        <td><select id="school3">
+            <option value="0">선택하세요</option>
+            <option value="강남대학교">강남대학교</option>
+            <option value="용인대학교">용인대학교</option>
+            <option value="명지대학교">명지대학교</option>
+        </select></td>
+    </tr>
+    <tr><td>계열 선택</td>
+        <td><select id="department1">
+            <option value="0">선택하세요</option>
+            <option value="공학계열">공학계열</option>
+            <option value="인문계열">인문계열</option>
+            <option value="사회계열">사회계열</option>
+            <option value="교육계열">교육계열</option>
+            <option value="자연계열">자연계열</option>
+            <option value="의약계열">의약계열</option>
+            <option value="예체능계열">예체능계열</option>
+        </select></td>
+        <td><select id="department2">
+            <option value="0">선택하세요</option>
+            <option value="공학계열">공학계열</option>
+            <option value="인문계열">인문계열</option>
+            <option value="사회계열">사회계열</option>
+            <option value="교육계열">교육계열</option>
+            <option value="자연계열">자연계열</option>
+            <option value="의약계열">의약계열</option>
+            <option value="예체능계열">예체능계열</option>
+        </select></td>
+        <td><select id="department3">
+            <option value="0">선택하세요</option>
+            <option value="공학계열">공학계열</option>
+            <option value="인문계열">인문계열</option>
+            <option value="사회계열">사회계열</option>
+            <option value="교육계열">교육계열</option>
+            <option value="자연계열">자연계열</option>
+            <option value="의약계열">의약계열</option>
+            <option value="예체능계열">예체능계열</option>
+        </select></td>
+    </tr>
     <tr><td>학번</td><td><select name="num1">
         <option value="15">15학번</option>
         <option value="16">16학번</option>
@@ -24,8 +73,8 @@
     <tr><td>성별</td><td>
         <input type="radio" name="gen" value="m">남
         <input type="radio" name="gen" value="f">여
+        <input type="radio" name="gen" value="n">무관
     </td></tr>
 </table>
-<button>약관보기</button>  약관동의 <input type="checkbox" name="agree" value="y"><br>
 <button>매칭 시작</button>
 {{>layout/footer}}
