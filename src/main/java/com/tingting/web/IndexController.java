@@ -24,9 +24,7 @@ public class IndexController {
         return "index";
     }
     @GetMapping("/random")
-    public String random(){
-        return "random";
-    }
+    public String random(){ return "random"; }
     @GetMapping("/select")
     public String select(){
         return "select";
@@ -39,10 +37,18 @@ public class IndexController {
     public String myinfo(){ return "myinfo"; }
     @GetMapping("/matchlist")
     public String matchlist(){ return "matchlist"; }
+    @GetMapping("/callcenter")
+    public String callcenter() {return "callcenter";}
+    @GetMapping("/find_id")
+    public String find_id() {return "find_id";}
+    @GetMapping("/notice_id")
+    public String notice_id() {return "notice_id";}
     @GetMapping("findpassword")
     public String findpassword(){ return "findpassword"; }
     @GetMapping("changepassword")
     public String changepassword(){ return "changepassword"; }
+    @GetMapping("practice")
+    public String practice(){ return "practice"; }
 
 }
 
