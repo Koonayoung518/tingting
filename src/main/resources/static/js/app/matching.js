@@ -5,7 +5,6 @@ var main = {
      $('#btn_m').on('click',function(){_this.minus();});
     },
     plus : function() {
-
          var count =document.getElementById("var1").value;
          if(count<5){
              document.getElementById("var1").value = parseInt(count)+1;
