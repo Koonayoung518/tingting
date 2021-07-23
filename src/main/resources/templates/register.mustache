@@ -15,11 +15,9 @@
 </head>
 <body>
 <!-- Responsive navbar-->
-<nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container px-5">
-        <a class="navbar-brand" href="/"><img src="img/logo_test.jpg" width="350" height="150" onclick=""/></a>
+    <div class="text-center" >
+        <a class="navbar-brand" href="/"><img class="rounded" src="img/logo_test.jpg" width="350" height="150" onclick=""/></a>
     </div>
-</nav>
 
 <section class="bg-light py-5">
     <div class="container px-5 my-5 px-5">
@@ -86,7 +84,7 @@
                     <div class="form-floating mb-3">
                         <div class="input-group">
                             <input class="form-control" id="id" type="text" placeholder="아이디" data-sb-validations="required" />
-                            <label for="name"></label>
+                            <label for="name"><a class="btn btn-primary" href="#!">중복확인</a></label>
                             <div class="invalid-feedback" data-sb-feedback="name:required">아이디를 입력해주세요</div>
                         </div>
                     </div>
@@ -110,18 +108,7 @@
                             <label for="name"></label>
                         </div>
                     </div>
-
-
-
-
-                    <div class="d-grid"><button class="btn btn-primary btn-lg" id="submitButton" type="submit" onclick="location.href='/index'">로그인</button></div>
-                    <div>
-                        <a class="text-decoration-none" href="/find_id">
-                            아이디찾기/
-                        </a>
-                        <a href = "/findpassword">비밀번호 찾기/</a>
-                        <a href = "/register">회원가입</a>
-                    </div>
+                    <div><button class="btn btn-primary form-control" id="registerButton" type="submit" onclick="location.href='/login'">회원가입</button></div>
                 </form>
             </div>
         </div>
