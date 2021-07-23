@@ -1,7 +1,18 @@
 {{>layout/header}}
-<div>
-    <textarea rows="3" cols="30" readonly></textarea>
-</div>
-<Button onclick="location.href='/login'">로그인</Button><br>
-<Button>비밀번호 찾기</Button>
+<section class="bg-light py-5">
+    <div class="container px-5 my-5 px-5">
+        <div class="row gx-5 justify-content-center">
+            <div class="col-lg-6">
+                <div class="mb-4">
+                    <textarea class="form-control-6" id="noice_id" style="height: 5rem" readonly></textarea>
+                </div>
+                <div class="mb-4 align-content-center">
+                    <button class="btn btn-primary btn-lg" onclick="location.href='/login'">로그인</button>
+                </div>
+                <div class="mb-4 align-content-center">
+                    <button class="btn btn-primary btn-lg" onclick="location.href='/findpassword'">비밀번호 찾기</button>
+                </div>
+
+            </div></div></div></section>
+
 {{>layout/footer}}

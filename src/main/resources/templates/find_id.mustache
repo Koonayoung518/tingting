@@ -5,7 +5,7 @@
             <div class="col-lg-6">
     <!-- school input-->
     <div class="form-floating mb-3">
-        <select id="school1">
+        <select class="custom-select form-select"  id="school1">
             <option value="0">선택하세요</option>
             <option value="강남대학교">강남대학교</option>
             <option value="용인대학교">용인대학교</option>
@@ -14,21 +14,23 @@
         <label for="school">학교</label>
     </div>
     <!-- number input-->
-    <div class="form-floating mb-3">
-        <input class="form-control" id="user_number" type="text"  maxlength="9" />
-        <label for="number">학번</label>
-    </div>
-    <!-- name input-->
-    <div class="form-floating mb-3">
-        <input class="form-control" id="user_number" type="text"/>
-        <label for="name">이름</label>
-    </div>
-    <div class="form-floating mb-3 d-grid gap-3 d-sm-flex justify-content-sm-center">
+                <div class="form-floating mb-3">
+                        <input class="form-control" id="user_number" maxlength="9"  type="text" placeholder="학번" data-sb-validations="required" />
+                        <label for="number">학번</label>
+                        <div class="invalid-feedback" data-sb-feedback="name:required">학번을 입력해주세요</div>
+                </div>
+                    <!-- name input-->
+                    <div class="form-floating mb-3">
+                            <input class="form-control" id="user_name" type="text" placeholder="이름" data-sb-validations="required" />
+                            <label for="number">이름</label>
+                            <div class="invalid-feedback" data-sb-feedback="name:required">이름을 입력해주세요</div>
+                        </div>
+    <div class="form-floating mb-3 d-grid d-sm-flex">
         <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
         <label for="email">학교 이메일</label>
         <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
         <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-        <button class="btn btn-primary btn-lg">인증하기</button>
+        <button class="btn btn-primary btn-lg">인증</button>
     </div>
 <button class="btn btn-primary btn-lg" onclick="location.href='/notice_id'">찾기</button>
 

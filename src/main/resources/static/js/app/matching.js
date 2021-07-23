@@ -8,7 +8,8 @@ var main = {
          var count =document.getElementById("var1").value;
          if(count<5){
              document.getElementById("var1").value = parseInt(count)+1;
-                $('#ran_table').append("<tr id=\"ran_userid"+count+"\"><td colspan=\"3\"><input type=\"text\"></td></tr>");
+                $('#ran_table').append("<tr id=\"ran_userid"+count+"\"><td colspan=\"3\"><input class=\"form-control form-control-5 justify-content-center\" type=\"text\"></td></tr>");
+
          }
 
     },
