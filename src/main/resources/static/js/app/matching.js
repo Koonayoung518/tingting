@@ -1,10 +1,4 @@
-$(window).on('load', function ()
-{
-	$('.selectpicker').selectpicker(
-	{
-		'selectedText': 'cat'
- 	});
-});
+
 var main = {
     init : function() {
      var _this = this;
