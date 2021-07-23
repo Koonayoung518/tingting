@@ -307,6 +307,7 @@ th {
 
 label {
   display: inline-block;
+  margin-bottom: 0rem; !important
 }
 
 button {
@@ -2130,7 +2131,7 @@ progress {
   }
 }
 .form-label {
-  margin-bottom: 0.5rem;
+
 }
 
 .col-form-label {
