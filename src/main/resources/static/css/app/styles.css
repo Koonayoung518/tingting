@@ -69,7 +69,13 @@ hr {
   border: 0;
   opacity: 0.25;
 }
-
+.main_hr {
+   margin: 1rem 0;
+   color: #579D49;
+   background-color: #579D49;
+   border: 1rem;
+   opacity: 0.25;
+ }
 hr:not([size]) {
   height: 1px;
 }
@@ -2183,6 +2189,7 @@ progress {
           appearance: none;
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+   resize:none;
 }
 .form-control-1 {
 margin-top: 6rem;
@@ -2207,12 +2214,16 @@ margin-top: 6rem;
   display: block;
   width: 80%;
 }
+.ran {
+    width:100%;
+}
 .ran_id {
 margin-top:3rem;
-width: 80%;
-border: 1px solid #579D49;
-border-radius: 0.25rem;
+margin-bottom:3rem;
+border: 2px solid #579D49;
+border-radius: 0.5rem;
 }
+
 .form-control-3 {
    height:2.5rem;
 }
@@ -2239,6 +2250,22 @@ border-radius: 0.25rem;
               appearance: none;
       border-radius: 0.25rem;
       transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+      resize:none;
+}
+.form-control-7 {
+      display: block;
+      width: 100%;
+      padding: 0.375rem 0.75rem;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #212529;
+      background-color: #fff;
+      background-clip: padding-box;
+
+      -webkit-appearance: none;
+         -moz-appearance: none;
+              appearance: none;
 }
 @media (prefers-reduced-motion: reduce) {
   .form-control {
@@ -2276,6 +2303,7 @@ border-radius: 0.25rem;
 .form-control:disabled, .form-control[readonly] {
   background-color: #e9ecef;
   opacity: 1;
+  resize:none;
 }
 .form-control::file-selector-button {
   padding: 0.375rem 0.75rem;
@@ -3043,15 +3071,16 @@ textarea.form-control-lg {
   background-color: #EAEAEA;
   border-color: #EAEAEA;
 }
+
 .btn-primary:hover {
   color: #fff;
-  background-color: #0b5ed7;
-  border-color: #0a58ca;
+  background-color: #66B157;
+  border-color: #549747;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #fff;
-  background-color: #0b5ed7;
-  border-color: #0a58ca;
+  background-color: #66B157;
+  border-color: #549747;
   box-shadow: 0 0 0 0.25rem rgba(49, 132, 253, 0.5);
 }
 .btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
@@ -3494,8 +3523,16 @@ textarea.form-control-lg {
   font-size: 1rem;
   border-radius: 0.3rem;
 }
+.btn-lg-0, .btn-group-lg > .btn {
+  font-size: 1.3rem;
+  border-radius: 0.3rem;
+}
 .btn-lg-1, .btn-group-lg > .btn {
   font-size: 1.5rem;
+  border-radius: 0.3rem;
+}
+.btn-lg-2, .btn-group-lg > .btn {
+  font-size: 2rem;
   border-radius: 0.3rem;
 }
 .btn-sm, .btn-group-sm > .btn {

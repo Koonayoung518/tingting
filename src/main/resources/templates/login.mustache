@@ -9,30 +9,30 @@
                 <!-- https://startbootstrap.com/solution/contact-forms-->
                 <!-- to get an API token!-->
                 <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                    <!-- id input-->
-                    <div class="form-floating mb-3">
-                        <!-- 원래 <input class="form-control" id="userid" type="text" placeholder="Enter your id..." data-sb-validations="required" /> !-->
-                        <input class="form-control" id="userid" type="text" placeholder="Enter your id..."/>
-                        <label for="name">아이디</label>
+                    <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+                        <div class="form-control-7">
+                            <!-- id input-->
+                            <div class="form-floating mb-3">
+                                <!-- 원래 <input class="form-control" id="userid" type="text" placeholder="Enter your id..." data-sb-validations="required" /> !-->
+                                <input class="form-control" id="userid" type="text" placeholder="Enter your id..."/>
+                                <label for="name">아이디</label>
+                            </div>
+                            <!-- password input-->
+                            <div class="form-floating mb-3">
+                                <!--<input class="form-control" id="password" type="password" placeholder="Enter your password..." data-sb-validations="required" /> !-->
+                                <input class="form-control" id="password" type="password" placeholder="Enter your password..." />
+                                <label for="name">비밀번호</label>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-lg-1  mb-3" id="login_Button"  onclick="location.href='/index'">로그인</button>
                     </div>
-                    <!-- password input-->
-                    <div class="form-floating mb-3">
-                        <!--<input class="form-control" id="password" type="password" placeholder="Enter your password..." data-sb-validations="required" /> !-->
-                        <input class="form-control" id="password" type="password" placeholder="Enter your password..." />
-                        <label for="name">비밀번호</label>
+
+                    <div class="d-grid mt-5">
+                        <button class="btn btn-primary btn-lg-0 form-control mb-3" id="findid_Button"  onclick="location.href='/find_id'">아이디 찾기</button>
+                        <button class="btn btn-primary btn-lg-0 form-control mb-3" id="findpw_Button"  onclick="location.href='/findpassword'">비밀번호 찾기</button>
+                        <button class="btn btn-primary btn-lg-0 form-control mb-3" id="register_Button"  onclick="location.href='/register'">회원가입</button>
                     </div>
-                    <div class="d-grid"><button class="btn btn-primary btn-lg form-control" style="font-size:1.5rem;" id="submitButton"  onclick="location.href='/index'">로그인</button></div>
-                    <div style="margin-left: 7rem; margin-top: 1.5rem; font-size: 1.5rem;">
-                        <a class="text-decoration-none" href="/find_id">
-                            아이디찾기 |
-                        </a>
-                        <a class="text-decoration-none" href="/findpassword">
-                            비밀번호찾기 |
-                        </a>
-                        <a class="text-decoration-none" href="/register">
-                            회원가입
-                        </a>
-                    </div>
+
                 </form>
             </div>
         </div>
