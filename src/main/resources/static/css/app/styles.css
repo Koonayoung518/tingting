@@ -1060,6 +1060,7 @@ progress {
   --bs-gutter-x: 3rem;
 }
 
+
 .g-5,
 .gy-5 {
   --bs-gutter-y: 3rem;
@@ -1427,6 +1428,7 @@ progress {
   .col-lg-2 {
     flex: 0 0 auto;
     width: 16.66666667%;
+    margin-right: 2rem;
   }
   select.col-lg-2{
   margin : 1px;
@@ -6805,6 +6807,11 @@ ul li a:hover{
   justify-content: flex-end !important;
 }
 
+#selectButton{
+    margin: auto !important;
+    display: block !important;
+    width: 33.3333% !important;
+}
 .justify-content-center {
   justify-content: center !important;
 }
@@ -7184,12 +7191,17 @@ ul li a:hover{
   padding-right: 3rem !important;
   padding-left: 3rem !important;
 }
+.col-lg-9{
+    padding-left:2rem !important;
+}
 
 .py-0 {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
 }
-
+.ma-1{
+   margin-left: 1rem;
+}
 .py-1 {
   padding-top: 0.25rem !important;
   padding-bottom: 0.25rem !important;
