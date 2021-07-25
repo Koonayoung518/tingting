@@ -49,8 +49,7 @@ public class IndexController {
     public String changepassword(){ return "changepassword"; }
     @GetMapping("practice")
     public String practice(){ return "practice"; }
-    @GetMapping("terms")
-    public String terms(){ return "terms"; }
+
 }
 
 
