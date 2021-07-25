@@ -1,38 +1,106 @@
 {{>layout/header}}
-<!-- Testimonials section-->
-    <div class="container px-5 my-5 px-5">
-        <div class="text-center mb-5">
-            <h2 class="fw-bolder">매칭현황</h2>
-        </div>
-        <div class="row gx-5 justify-content-center">
-            <div class="col-lg-6">
-                <!-- Testimonial 1-->
-                <div class="card mb-4">
-                    <div class="card-body p-4">
-                        <div class="d-flex">
-                            <div class="flex-shrink-0"><img src="img/ran_test.JPG"></div>
-                            <div class="ms-4">
-                                <p class="mb-1"> 인원수 : 4명 </p>
-                            </div>
-                            <div class="flex-shrink-0"><button class="btn btn-primary btn-lg disabled">매칭중</button></div>
-                            <div class="flex-shrink-0"><button class="btn btn-primary btn-lg disabled">매칭취소</button></div>
+<div class="page-content page-container" id="page-content">
+    <div class="padding bg-light">
+        <div class="row container justify-content-center">
+            <div class="col-md-4 grid-margin stretch-card">
+                <div class="card m-auto">
+                    <div class="card-body">
+                        <h4 class="card-title text-center"><strong>랜덤매칭 현황</strong></h4><br>
+                        <div class="template-demo">
+                            <table class="table mb-0">
+                                <thead>
+                                <tr>
+                                    <th class="pl-0">목록</th>
+                                    <th class="text-right">상태</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="pl-0">매칭 현황</td>
+                                    <td class="pr-0 text-right">
+                                        <div class="badge badge-primary badge-pill">매칭중</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="pl-0">인원</td>
+                                    <td class="pr-0 text-right">
+                                        <div class="badge badge-info badge-pill">4</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="pl-0">Danger label</td>
+                                    <td class="pr-0 text-right">
+                                        <div class="badge badge-danger badge-pill">Danger</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="pl-0">Success label</td>
+                                    <td class="pr-0 text-right">
+                                        <div class="badge badge-success badge-pill">Success</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="pl-0">Warning label</td>
+                                    <td class="pr-0 text-right">
+                                        <div class="badge badge-warning badge-pill">Warning</div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
-                <!-- Testimonial 2-->
-                <div class="card mb-4">
-                    <div class="card-body p-4">
-                        <div class="d-flex">
-                            <div class="flex-shrink-0"><img src="img/sel_test.JPG"></div>
-                            <div class="ms-4">
-                                <p class="mb-1"> 상세 정보 ~~~ </p>
-                            </div>
-                            <div class="flex-shrink-0"><button>매칭완료</button></div>
-                            <div class="flex-shrink-0"><button>채팅이동</button></div>
+            </div>
+            <div class="col-md-4 grid-margin stretch-card">
+                <div class="card m-auto">
+                    <div class="card-body">
+                        <h4 class="card-title text-center"><strong>선택매칭 현황</strong></h4><br>
+                        <div class="template-demo">
+                            <table class="table mb-0">
+                                <thead>
+                                <tr>
+                                    <th class="pl-0">목록</th>
+                                    <th class="text-right">상태</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="pl-0">매칭 현황</td>
+                                    <td class="pr-0 text-right">
+                                        <div class="badge badge-primary badge-pill">매칭중</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="pl-0">인원</td>
+                                    <td class="pr-0 text-right">
+                                        <div class="badge badge-info badge-pill">3</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="pl-0">Danger label</td>
+                                    <td class="pr-0 text-right">
+                                        <div class="badge badge-danger badge-pill">Danger</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="pl-0">Success label</td>
+                                    <td class="pr-0 text-right">
+                                        <div class="badge badge-success badge-pill">Success</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="pl-0">Warning label</td>
+                                    <td class="pr-0 text-right">
+                                        <div class="badge badge-warning badge-pill">Warning</div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 {{>layout/footer}}
